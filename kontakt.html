@@ -6,6 +6,7 @@
     <link rel="icon" type="image/png" href="favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css">
+
     <title>Pogotowie komputerowe</title>
 </head>
 
@@ -46,6 +47,7 @@
                             <td>Usługa</td>
                             <td>
                                 <select name="usluga" id="usluga">
+                                    <option value=""></option>
                                     <option value="naprawa komputera">naprawa komputera</option>
                                     <option value="odzyskiwanie danych">odzyskiwanie danych</option>
                                     <option value="problemy z oprogramowaniem">problemy z oprogramowaniem</option>
@@ -60,11 +62,16 @@
                         </tr>
                         <tr>
                             <td></td>
-                            <td><input type="reset" value="Resetuj"><button></button>></td>
+                            <td><input type="reset" value="Resetuj"> <button type="button" id="submit"
+                                    onclick="wyslij(pobierzDane())">Button</button>
+                            </td>
                         </tr>
 
                     </table>
                 </form>
+                <p id="name"></p>
+                <p id="mail"></p>
+                <p id="service"> </p>
 
             </div>
 
@@ -80,7 +87,7 @@
             </p>
         </footer>
     </div>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
